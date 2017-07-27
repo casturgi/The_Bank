@@ -6,7 +6,7 @@ require_relative 'the_bank_classes'
 def welcome_screen
 	@current_customer = ""
 	puts "Welcome to our credit union"
-	puts "Plea    se choose one of the following:"
+	puts "Please choose one of the following:"
 	puts "-----------------------------------"
 	puts "1. Customer Sign-in"
 	puts "2. New Customer Registration"
