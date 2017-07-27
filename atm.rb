@@ -6,7 +6,7 @@ require_relative 'the_bank_classes'
 def welcome_screen
 	@current_customer = ""
 	puts "Welcome to our credit union"
-	puts "Please choose one of the following:"
+	puts "Plea    se choose one of the following:"
 	puts "-----------------------------------"
 	puts "1. Customer Sign-in"
 	puts "2. New Customer Registration"
@@ -63,7 +63,7 @@ def sign_up(name, location)
 			puts "What's your name?"
 			name = gets.chomp
 			puts "What's your location?"
-			location = gets.chomp	
+			location = gets.chomp
 		end
 		@current_customer = Customer.new(name, location)
 		@customers.push(@current_customer)
@@ -77,10 +77,10 @@ def account_menu
 	puts "1. Create Account"
 	puts "2. Review Account"
 	puts "3. Sign Out"
-	
+
 	choice = gets.chomp.to_i
 
-	case choice 
+	case choice
 	when 1
 		create_account
 	when 2
@@ -88,10 +88,10 @@ def account_menu
 	when 3
 		puts "Thank you for banking with us"
 		welcome_screen
-	else 
+	else
 		puts "invalid selection"
 		account_menu
-	end	
+	end
 end
 
 def create_account
@@ -134,7 +134,7 @@ def review_account
 end
 
 def current_account_actions
-	
+
 	puts "Choose from the following:"
 	puts "--------------------------"
 	puts "1. Check balance"
